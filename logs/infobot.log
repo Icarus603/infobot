@@ -1,0 +1,896 @@
+2025-06-03 17:53:02 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 17:53:02 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 17:53:02 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 17:53:02 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 17:53:02 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 17:53:02 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：7 個
+2025-06-03 17:53:02 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 17:53:02 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 17:53:02 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 17:58:19 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 17:58:19 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 17:58:19 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 17:58:19 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 17:58:19 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 17:58:19 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：7 個
+2025-06-03 17:58:19 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 17:58:19 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 17:58:19 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 17:58:19 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 17:58:21 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 17:58:21 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 17:58:21 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 17:58:21 | INFO     | __main__:main:115 -   - 老師數量: 1
+2025-06-03 17:58:21 | INFO     | __main__:main:116 -   - 學生數量: 1
+2025-06-03 17:58:21 | INFO     | __main__:main:117 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 17:58:21 | INFO     | __main__:main:120 - 
+==================================================
+2025-06-03 17:58:21 | INFO     | __main__:main:121 - 重要提醒:
+2025-06-03 17:58:21 | INFO     | __main__:main:122 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 17:58:21 | INFO     | __main__:main:123 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 17:58:21 | INFO     | __main__:main:124 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 17:58:21 | INFO     | __main__:main:125 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 17:58:21 | INFO     | __main__:main:126 - ==================================================
+
+2025-06-03 17:58:21 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 17:58:23 | ERROR    | infobot.core.wechat_controller:check_wechat_status:61 - WeChat 未登錄
+2025-06-03 17:58:23 | ERROR    | infobot.core.bot:start:159 - WeChat 狀態異常，無法啟動機器人
+2025-06-03 17:58:23 | WARNING  | infobot.core.bot:stop:237 - 機器人未在運行
+2025-06-03 17:59:57 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 17:59:57 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 17:59:57 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 17:59:57 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 17:59:57 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 17:59:57 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：7 個
+2025-06-03 17:59:57 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 17:59:57 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 17:59:57 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 17:59:57 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 17:59:59 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 17:59:59 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 17:59:59 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 17:59:59 | INFO     | __main__:main:115 -   - 老師數量: 1
+2025-06-03 17:59:59 | INFO     | __main__:main:116 -   - 學生數量: 1
+2025-06-03 17:59:59 | INFO     | __main__:main:117 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 17:59:59 | INFO     | __main__:main:120 - 
+==================================================
+2025-06-03 17:59:59 | INFO     | __main__:main:121 - 重要提醒:
+2025-06-03 17:59:59 | INFO     | __main__:main:122 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 17:59:59 | INFO     | __main__:main:123 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 17:59:59 | INFO     | __main__:main:124 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 17:59:59 | INFO     | __main__:main:125 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 17:59:59 | INFO     | __main__:main:126 - ==================================================
+
+2025-06-03 17:59:59 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 18:00:02 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 18:00:02 | INFO     | infobot.core.wechat_controller:test_automation:282 - 開始測試WeChat自動化功能
+2025-06-03 18:00:04 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 18:00:06 | INFO     | infobot.core.wechat_controller:test_automation:291 - 獲取到 1 個聊天項目
+2025-06-03 18:00:08 | INFO     | infobot.core.wechat_controller:send_message:74 - 正在向 文件傳輸助手 發送消息
+2025-06-03 18:00:11 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 18:00:22 | INFO     | infobot.core.wechat_controller:send_message:84 - ✅ 成功向 文件傳輸助手 發送消息
+2025-06-03 18:00:22 | INFO     | infobot.core.wechat_controller:test_automation:310 - 自動化功能測試完成: {'wechat_running': True, 'get_chat_list': True, 'activate_wechat': True, 'send_message': True}
+2025-06-03 18:00:22 | INFO     | infobot.core.bot:_setup_scheduled_tasks:203 - 定時任務設置完成
+2025-06-03 18:00:22 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:207 - 開始監控 1 個聯繫人的消息
+2025-06-03 18:00:22 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:162 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 18:00:23 | INFO     | infobot.core.bot:start:174 - 開始監控 1 位老師的消息
+2025-06-03 18:00:23 | INFO     | infobot.core.bot:start:181 - 預先打開 1 個學生聊天窗口
+2025-06-03 18:00:23 | INFO     | infobot.core.wechat_controller:open_chat_windows:131 - 開始打開 1 個聊天窗口
+2025-06-03 18:00:33 | INFO     | infobot.core.wechat_controller:open_chat_windows:141 - ✅ 成功打開 東南 信息24 陸雨陽 的聊天窗口
+2025-06-03 18:00:35 | INFO     | infobot.core.bot:start:187 - InfoBot 啟動成功！
+2025-06-03 18:00:35 | INFO     | infobot.core.bot:_run_main_loop:207 - 進入主運行循環
+2025-06-03 18:00:37 | INFO     | __main__:signal_handler:29 - 收到信號 2，正在關閉機器人...
+2025-06-03 18:00:37 | INFO     | infobot.core.bot:stop:240 - 正在停止 InfoBot...
+2025-06-03 18:00:37 | INFO     | infobot.core.wechat_controller:stop_all_monitoring:222 - 停止所有消息監控
+2025-06-03 18:00:37 | INFO     | infobot.core.bot:_generate_final_report:310 - 
+📈 【InfoBot 運行總結】
+總運行時間: 0天 0小時 0分鐘
+總收到消息: 0
+總發送消息: 0
+總轉發消息: 0
+總自動回覆: 0
+        
+2025-06-03 18:00:37 | INFO     | infobot.core.bot:stop:250 - InfoBot 已停止
+2025-06-03 18:00:37 | INFO     | __main__:signal_handler:34 - 機器人已關閉
+2025-06-03 18:00:37 | WARNING  | infobot.core.bot:stop:237 - 機器人未在運行
+2025-06-03 18:00:37 | WARNING  | infobot.core.bot:stop:237 - 機器人未在運行
+2025-06-03 19:16:34 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 19:16:34 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 19:16:34 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 19:16:34 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 19:16:34 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 19:16:34 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 19:16:34 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 19:16:34 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 19:16:34 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 19:16:34 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 19:16:36 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 19:16:36 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 19:16:36 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 19:16:36 | INFO     | __main__:main:115 -   - 老師數量: 1
+2025-06-03 19:16:36 | INFO     | __main__:main:116 -   - 學生數量: 1
+2025-06-03 19:16:36 | INFO     | __main__:main:117 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 19:16:36 | INFO     | __main__:main:120 - 
+==================================================
+2025-06-03 19:16:36 | INFO     | __main__:main:121 - 重要提醒:
+2025-06-03 19:16:36 | INFO     | __main__:main:122 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 19:16:36 | INFO     | __main__:main:123 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 19:16:36 | INFO     | __main__:main:124 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 19:16:36 | INFO     | __main__:main:125 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 19:16:36 | INFO     | __main__:main:126 - ==================================================
+
+2025-06-03 19:16:36 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 19:16:38 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 19:16:38 | INFO     | infobot.core.wechat_controller:test_automation:282 - 開始測試WeChat自動化功能
+2025-06-03 19:16:41 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 19:16:43 | INFO     | infobot.core.wechat_controller:test_automation:291 - 獲取到 1 個聊天項目
+2025-06-03 19:16:45 | INFO     | infobot.core.wechat_controller:send_message:74 - 正在向 文件傳輸助手 發送消息
+2025-06-03 19:16:47 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 19:17:04 | INFO     | infobot.core.wechat_controller:send_message:84 - ✅ 成功向 文件傳輸助手 發送消息
+2025-06-03 19:17:04 | INFO     | infobot.core.wechat_controller:test_automation:310 - 自動化功能測試完成: {'wechat_running': True, 'get_chat_list': True, 'activate_wechat': True, 'send_message': True}
+2025-06-03 19:17:04 | INFO     | infobot.core.bot:_setup_scheduled_tasks:203 - 定時任務設置完成
+2025-06-03 19:17:04 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:207 - 開始監控 1 個聯繫人的消息
+2025-06-03 19:17:04 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:162 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 19:17:05 | INFO     | infobot.core.bot:start:174 - 開始監控 1 位老師的消息
+2025-06-03 19:17:05 | INFO     | infobot.core.bot:start:181 - 預先打開 1 個學生聊天窗口
+2025-06-03 19:17:05 | INFO     | infobot.core.wechat_controller:open_chat_windows:131 - 開始打開 1 個聊天窗口
+2025-06-03 19:21:10 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 19:21:10 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 19:21:10 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 19:21:10 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 19:21:10 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 19:21:10 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 19:21:10 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 19:21:10 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 19:21:10 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 19:21:10 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 19:21:12 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 19:21:12 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 19:21:12 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 19:21:12 | INFO     | __main__:main:115 -   - 老師數量: 1
+2025-06-03 19:21:12 | INFO     | __main__:main:116 -   - 學生數量: 1
+2025-06-03 19:21:12 | INFO     | __main__:main:117 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 19:21:12 | INFO     | __main__:main:120 - 
+==================================================
+2025-06-03 19:21:12 | INFO     | __main__:main:121 - 重要提醒:
+2025-06-03 19:21:12 | INFO     | __main__:main:122 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 19:21:12 | INFO     | __main__:main:123 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 19:21:12 | INFO     | __main__:main:124 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 19:21:12 | INFO     | __main__:main:125 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 19:21:12 | INFO     | __main__:main:126 - ==================================================
+
+2025-06-03 19:21:12 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 19:21:14 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 19:21:14 | INFO     | infobot.core.wechat_controller:test_automation:282 - 開始測試WeChat自動化功能
+2025-06-03 19:21:16 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 19:21:19 | INFO     | infobot.core.wechat_controller:test_automation:291 - 獲取到 1 個聊天項目
+2025-06-03 19:21:21 | INFO     | infobot.core.wechat_controller:send_message:74 - 正在向 文件傳輸助手 發送消息
+2025-06-03 19:21:23 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 19:21:40 | INFO     | infobot.core.wechat_controller:send_message:84 - ✅ 成功向 文件傳輸助手 發送消息
+2025-06-03 19:21:40 | INFO     | infobot.core.wechat_controller:test_automation:310 - 自動化功能測試完成: {'wechat_running': True, 'get_chat_list': True, 'activate_wechat': True, 'send_message': True}
+2025-06-03 19:21:40 | INFO     | infobot.core.bot:_setup_scheduled_tasks:203 - 定時任務設置完成
+2025-06-03 19:21:40 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:207 - 開始監控 1 個聯繫人的消息
+2025-06-03 19:21:40 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:162 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 19:21:41 | INFO     | infobot.core.bot:start:174 - 開始監控 1 位老師的消息
+2025-06-03 19:21:41 | INFO     | infobot.core.bot:start:181 - 預先打開 1 個學生聊天窗口
+2025-06-03 19:21:41 | INFO     | infobot.core.wechat_controller:open_chat_windows:131 - 開始打開 1 個聊天窗口
+2025-06-03 19:21:50 | INFO     | __main__:signal_handler:29 - 收到信號 2，正在關閉機器人...
+2025-06-03 19:21:50 | WARNING  | infobot.core.bot:stop:237 - 機器人未在運行
+2025-06-03 19:21:50 | INFO     | __main__:signal_handler:34 - 機器人已關閉
+2025-06-03 19:21:50 | WARNING  | infobot.core.bot:stop:237 - 機器人未在運行
+2025-06-03 19:25:01 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 19:25:01 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 19:25:01 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 19:25:01 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 19:25:01 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 19:25:01 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 19:25:01 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 19:25:01 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 19:25:01 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 19:25:01 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 19:25:03 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 19:25:03 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 19:25:03 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 19:25:03 | INFO     | __main__:main:115 -   - 老師數量: 1
+2025-06-03 19:25:03 | INFO     | __main__:main:116 -   - 學生數量: 1
+2025-06-03 19:25:03 | INFO     | __main__:main:117 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 19:25:03 | INFO     | __main__:main:120 - 
+==================================================
+2025-06-03 19:25:03 | INFO     | __main__:main:121 - 重要提醒:
+2025-06-03 19:25:03 | INFO     | __main__:main:122 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 19:25:03 | INFO     | __main__:main:123 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 19:25:03 | INFO     | __main__:main:124 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 19:25:03 | INFO     | __main__:main:125 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 19:25:03 | INFO     | __main__:main:126 - ==================================================
+
+2025-06-03 19:25:03 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 19:25:06 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 19:25:06 | INFO     | infobot.core.wechat_controller:test_automation:282 - 開始測試WeChat自動化功能
+2025-06-03 19:25:08 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 19:25:10 | INFO     | infobot.core.wechat_controller:test_automation:291 - 獲取到 1 個聊天項目
+2025-06-03 19:25:12 | INFO     | infobot.core.wechat_controller:test_automation:308 - 使用 東南 信息24 陸雨陽 測試聊天窗口打開功能
+2025-06-03 19:25:28 | INFO     | infobot.core.wechat_controller:test_automation:318 - 自動化功能測試完成: {'wechat_running': True, 'get_chat_list': True, 'activate_wechat': True, 'send_message': True}
+2025-06-03 19:25:28 | INFO     | infobot.core.bot:_setup_scheduled_tasks:203 - 定時任務設置完成
+2025-06-03 19:25:28 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:207 - 開始監控 1 個聯繫人的消息
+2025-06-03 19:25:28 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:162 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 19:25:29 | INFO     | infobot.core.bot:start:174 - 開始監控 1 位老師的消息
+2025-06-03 19:25:29 | INFO     | infobot.core.bot:start:181 - 預先打開 1 個學生聊天窗口
+2025-06-03 19:25:29 | INFO     | infobot.core.wechat_controller:open_chat_windows:131 - 開始打開 1 個聊天窗口
+2025-06-03 19:25:44 | INFO     | infobot.core.wechat_controller:open_chat_windows:141 - ✅ 成功打開 東南 信息24 陸雨陽 的聊天窗口
+2025-06-03 19:31:58 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 19:31:58 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 19:31:58 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 19:31:58 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 19:31:58 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 19:31:58 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 19:31:58 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 19:31:58 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 19:31:58 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 19:31:58 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 19:32:00 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 19:32:00 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 19:32:00 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 19:32:00 | INFO     | __main__:main:115 -   - 老師數量: 1
+2025-06-03 19:32:00 | INFO     | __main__:main:116 -   - 學生數量: 1
+2025-06-03 19:32:00 | INFO     | __main__:main:117 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 19:32:00 | INFO     | __main__:main:120 - 
+==================================================
+2025-06-03 19:32:00 | INFO     | __main__:main:121 - 重要提醒:
+2025-06-03 19:32:00 | INFO     | __main__:main:122 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 19:32:00 | INFO     | __main__:main:123 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 19:32:00 | INFO     | __main__:main:124 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 19:32:00 | INFO     | __main__:main:125 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 19:32:00 | INFO     | __main__:main:126 - ==================================================
+
+2025-06-03 19:32:00 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 19:32:03 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 19:32:03 | INFO     | infobot.core.wechat_controller:test_automation:282 - 開始測試WeChat自動化功能
+2025-06-03 19:32:05 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 19:32:07 | INFO     | infobot.core.wechat_controller:test_automation:291 - 獲取到 1 個聊天項目
+2025-06-03 19:32:09 | INFO     | infobot.core.wechat_controller:test_automation:308 - 使用 東南 信息24 陸雨陽 測試聊天窗口打開功能
+2025-06-03 19:32:22 | INFO     | infobot.core.wechat_controller:test_automation:318 - 自動化功能測試完成: {'wechat_running': True, 'get_chat_list': True, 'activate_wechat': True, 'send_message': True}
+2025-06-03 19:32:22 | INFO     | infobot.core.bot:_setup_scheduled_tasks:203 - 定時任務設置完成
+2025-06-03 19:32:22 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:207 - 開始監控 1 個聯繫人的消息
+2025-06-03 19:32:22 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:162 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 19:32:23 | INFO     | infobot.core.bot:start:174 - 開始監控 1 位老師的消息
+2025-06-03 19:32:23 | INFO     | infobot.core.bot:start:181 - 預先打開 1 個學生聊天窗口
+2025-06-03 19:32:23 | INFO     | infobot.core.wechat_controller:open_chat_windows:131 - 開始打開 1 個聊天窗口
+2025-06-03 19:32:35 | INFO     | infobot.core.wechat_controller:open_chat_windows:141 - ✅ 成功打開 東南 信息24 陸雨陽 的聊天窗口
+2025-06-03 19:32:37 | INFO     | infobot.core.bot:start:187 - InfoBot 啟動成功！
+2025-06-03 19:32:37 | INFO     | infobot.core.bot:_run_main_loop:207 - 進入主運行循環
+2025-06-03 20:21:37 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 20:21:37 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 20:21:37 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 20:21:37 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 20:21:37 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 20:21:37 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 20:21:37 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 20:21:37 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 20:21:37 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 20:21:37 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 20:21:39 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 20:21:39 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 20:21:39 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 20:21:39 | INFO     | __main__:main:115 -   - 老師數量: 1
+2025-06-03 20:21:39 | INFO     | __main__:main:116 -   - 學生數量: 1
+2025-06-03 20:21:39 | INFO     | __main__:main:117 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 20:21:39 | INFO     | __main__:main:120 - 
+==================================================
+2025-06-03 20:21:39 | INFO     | __main__:main:121 - 重要提醒:
+2025-06-03 20:21:39 | INFO     | __main__:main:122 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 20:21:39 | INFO     | __main__:main:123 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 20:21:39 | INFO     | __main__:main:124 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 20:21:39 | INFO     | __main__:main:125 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 20:21:39 | INFO     | __main__:main:126 - ==================================================
+
+2025-06-03 20:21:39 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 20:21:42 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:21:42 | INFO     | infobot.core.wechat_controller:test_automation:282 - 開始測試WeChat自動化功能
+2025-06-03 20:21:44 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:21:46 | INFO     | infobot.core.wechat_controller:test_automation:291 - 獲取到 1 個聊天項目
+2025-06-03 20:21:48 | INFO     | infobot.core.wechat_controller:test_automation:308 - 使用 東南 信息24 陸雨陽 測試聊天窗口打開功能
+2025-06-03 20:22:10 | INFO     | infobot.core.wechat_controller:test_automation:318 - 自動化功能測試完成: {'wechat_running': True, 'get_chat_list': True, 'activate_wechat': True, 'send_message': True}
+2025-06-03 20:22:10 | INFO     | infobot.core.bot:_setup_scheduled_tasks:203 - 定時任務設置完成
+2025-06-03 20:22:10 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:207 - 開始監控 1 個聯繫人的消息
+2025-06-03 20:22:10 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:162 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 20:22:11 | INFO     | infobot.core.bot:start:174 - 開始監控 1 位老師的消息
+2025-06-03 20:22:11 | INFO     | infobot.core.bot:start:181 - 預先打開 1 個學生聊天窗口
+2025-06-03 20:22:11 | INFO     | infobot.core.wechat_controller:open_chat_windows:131 - 開始打開 1 個聊天窗口
+2025-06-03 20:23:35 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 20:23:35 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 20:23:35 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 20:23:35 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 20:23:35 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 20:23:35 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 20:23:35 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 20:23:35 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 20:23:35 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 20:23:35 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 20:23:37 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 20:23:37 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 20:23:37 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 20:23:37 | INFO     | __main__:main:115 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 20:23:37 | INFO     | __main__:main:116 -   - 日誌級別: INFO
+2025-06-03 20:23:37 | INFO     | __main__:main:117 - 
+2025-06-03 20:23:37 | INFO     | __main__:main:120 - 📚 老師列表 (共 1 位):
+2025-06-03 20:23:37 | INFO     | __main__:main:123 -      1. 南理 計科24 羅林海
+2025-06-03 20:23:37 | INFO     | __main__:main:126 - 
+2025-06-03 20:23:37 | INFO     | __main__:main:129 - 🎓 學生列表 (共 1 位):
+2025-06-03 20:23:37 | INFO     | __main__:main:132 -      1. 東南 信息24 陸雨陽
+2025-06-03 20:23:37 | INFO     | __main__:main:135 - 
+2025-06-03 20:23:37 | INFO     | __main__:main:149 - 
+==================================================
+2025-06-03 20:23:37 | INFO     | __main__:main:150 - 重要提醒:
+2025-06-03 20:23:37 | INFO     | __main__:main:151 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 20:23:37 | INFO     | __main__:main:152 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 20:23:37 | INFO     | __main__:main:153 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 20:23:37 | INFO     | __main__:main:154 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 20:23:37 | INFO     | __main__:main:155 - ==================================================
+
+2025-06-03 20:23:37 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 20:23:39 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:23:39 | INFO     | infobot.core.wechat_controller:test_automation:282 - 開始測試WeChat自動化功能
+2025-06-03 20:23:41 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:23:44 | INFO     | infobot.core.wechat_controller:test_automation:291 - 獲取到 1 個聊天項目
+2025-06-03 20:23:46 | INFO     | infobot.core.wechat_controller:test_automation:308 - 使用 東南 信息24 陸雨陽 測試聊天窗口打開功能
+2025-06-03 20:24:06 | INFO     | __main__:signal_handler:29 - 收到信號 2，正在關閉機器人...
+2025-06-03 20:24:06 | WARNING  | infobot.core.bot:stop:237 - 機器人未在運行
+2025-06-03 20:24:06 | INFO     | __main__:signal_handler:34 - 機器人已關閉
+2025-06-03 20:24:06 | WARNING  | infobot.core.bot:stop:237 - 機器人未在運行
+2025-06-03 20:24:21 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 20:24:21 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 20:24:21 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 20:24:21 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 20:24:21 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 20:24:21 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 20:24:21 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 20:24:21 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 20:24:21 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 20:24:21 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 20:24:23 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 20:24:23 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 20:24:23 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 20:24:23 | INFO     | __main__:main:115 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 20:24:23 | INFO     | __main__:main:116 -   - 日誌級別: INFO
+2025-06-03 20:24:23 | INFO     | __main__:main:117 - 
+2025-06-03 20:24:23 | INFO     | __main__:main:120 - 📚 老師列表 (共 1 位):
+2025-06-03 20:24:23 | INFO     | __main__:main:123 -      1. 南理 計科24 羅林海
+2025-06-03 20:24:23 | INFO     | __main__:main:126 - 
+2025-06-03 20:24:23 | INFO     | __main__:main:129 - 🎓 學生列表 (共 1 位):
+2025-06-03 20:24:23 | INFO     | __main__:main:132 -      1. 東南 信息24 陸雨陽
+2025-06-03 20:24:23 | INFO     | __main__:main:135 - 
+2025-06-03 20:24:23 | INFO     | __main__:main:149 - 
+==================================================
+2025-06-03 20:24:23 | INFO     | __main__:main:150 - 重要提醒:
+2025-06-03 20:24:23 | INFO     | __main__:main:151 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 20:24:23 | INFO     | __main__:main:152 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 20:24:23 | INFO     | __main__:main:153 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 20:24:23 | INFO     | __main__:main:154 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 20:24:23 | INFO     | __main__:main:155 - ==================================================
+
+2025-06-03 20:24:23 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 20:24:26 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:24:26 | INFO     | infobot.core.wechat_controller:test_automation:282 - 開始測試WeChat自動化功能
+2025-06-03 20:24:28 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:24:30 | INFO     | infobot.core.wechat_controller:test_automation:291 - 獲取到 1 個聊天項目
+2025-06-03 20:24:32 | INFO     | infobot.core.wechat_controller:test_automation:308 - 使用 東南 信息24 陸雨陽 測試聊天窗口打開功能
+2025-06-03 20:24:54 | INFO     | infobot.core.wechat_controller:test_automation:318 - 自動化功能測試完成: {'wechat_running': True, 'get_chat_list': True, 'activate_wechat': True, 'send_message': True}
+2025-06-03 20:24:54 | INFO     | infobot.core.bot:_setup_scheduled_tasks:203 - 定時任務設置完成
+2025-06-03 20:24:54 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:207 - 開始監控 1 個聯繫人的消息
+2025-06-03 20:24:54 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:162 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 20:24:55 | INFO     | infobot.core.bot:start:174 - 開始監控 1 位老師的消息
+2025-06-03 20:24:55 | INFO     | infobot.core.bot:start:181 - 預先打開 1 個學生聊天窗口
+2025-06-03 20:24:55 | INFO     | infobot.core.wechat_controller:open_chat_windows:131 - 開始打開 1 個聊天窗口
+2025-06-03 20:25:16 | INFO     | infobot.core.wechat_controller:open_chat_windows:141 - ✅ 成功打開 東南 信息24 陸雨陽 的聊天窗口
+2025-06-03 20:25:18 | INFO     | infobot.core.bot:start:187 - InfoBot 啟動成功！
+2025-06-03 20:25:18 | INFO     | infobot.core.bot:_run_main_loop:207 - 進入主運行循環
+2025-06-03 20:25:23 | INFO     | __main__:signal_handler:29 - 收到信號 2，正在關閉機器人...
+2025-06-03 20:25:23 | INFO     | infobot.core.bot:stop:240 - 正在停止 InfoBot...
+2025-06-03 20:25:23 | INFO     | infobot.core.wechat_controller:stop_all_monitoring:222 - 停止所有消息監控
+2025-06-03 20:25:23 | INFO     | infobot.core.bot:_generate_final_report:310 - 
+📈 【InfoBot 運行總結】
+總運行時間: 0天 0小時 0分鐘
+總收到消息: 0
+總發送消息: 0
+總轉發消息: 0
+總自動回覆: 0
+        
+2025-06-03 20:25:23 | INFO     | infobot.core.bot:stop:250 - InfoBot 已停止
+2025-06-03 20:25:23 | INFO     | __main__:signal_handler:34 - 機器人已關閉
+2025-06-03 20:25:23 | WARNING  | infobot.core.bot:stop:237 - 機器人未在運行
+2025-06-03 20:25:23 | WARNING  | infobot.core.bot:stop:237 - 機器人未在運行
+2025-06-03 20:27:54 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 20:27:54 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 20:27:54 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 20:27:54 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 20:27:54 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 20:27:54 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 20:27:54 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 20:27:54 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 20:27:54 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 20:27:54 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 20:27:56 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 20:27:56 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 20:27:56 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 20:27:56 | INFO     | __main__:main:115 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 20:27:56 | INFO     | __main__:main:116 -   - 日誌級別: INFO
+2025-06-03 20:27:56 | INFO     | __main__:main:117 - 
+2025-06-03 20:27:56 | INFO     | __main__:main:120 - 📚 老師列表 (共 1 位):
+2025-06-03 20:27:56 | INFO     | __main__:main:123 -      1. 南理 計科24 羅林海
+2025-06-03 20:27:56 | INFO     | __main__:main:126 - 
+2025-06-03 20:27:56 | INFO     | __main__:main:129 - 🎓 學生列表 (共 1 位):
+2025-06-03 20:27:56 | INFO     | __main__:main:132 -      1. 東南 信息24 陸雨陽
+2025-06-03 20:27:56 | INFO     | __main__:main:135 - 
+2025-06-03 20:27:56 | INFO     | __main__:main:149 - 
+==================================================
+2025-06-03 20:27:56 | INFO     | __main__:main:150 - 重要提醒:
+2025-06-03 20:27:56 | INFO     | __main__:main:151 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 20:27:56 | INFO     | __main__:main:152 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 20:27:56 | INFO     | __main__:main:153 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 20:27:56 | INFO     | __main__:main:154 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 20:27:56 | INFO     | __main__:main:155 - ==================================================
+
+2025-06-03 20:27:56 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 20:27:58 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:27:58 | INFO     | infobot.core.wechat_controller:test_automation:282 - 開始測試WeChat自動化功能
+2025-06-03 20:28:01 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:28:03 | INFO     | infobot.core.wechat_controller:test_automation:291 - 獲取到 1 個聊天項目
+2025-06-03 20:28:05 | INFO     | infobot.core.wechat_controller:test_automation:313 - 測試老師聯繫人: 南理 計科24 羅林海
+2025-06-03 20:28:26 | INFO     | infobot.core.wechat_controller:test_automation:317 - ✅ 成功打開老師 南理 計科24 羅林海 的聊天窗口
+2025-06-03 20:28:28 | INFO     | infobot.core.wechat_controller:test_automation:324 - 測試學生聯繫人: 東南 信息24 陸雨陽
+2025-06-03 20:28:49 | INFO     | infobot.core.wechat_controller:test_automation:328 - ✅ 成功打開學生 東南 信息24 陸雨陽 的聊天窗口
+2025-06-03 20:28:51 | INFO     | infobot.core.wechat_controller:test_automation:338 - 聊天窗口測試結果: 2/2 成功
+2025-06-03 20:28:51 | INFO     | infobot.core.wechat_controller:test_automation:347 - 自動化功能測試完成: {'wechat_running': True, 'get_chat_list': True, 'activate_wechat': True, 'send_message': True}
+2025-06-03 20:28:51 | INFO     | infobot.core.bot:_setup_scheduled_tasks:220 - 定時任務設置完成
+2025-06-03 20:28:51 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:207 - 開始監控 1 個聯繫人的消息
+2025-06-03 20:28:51 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:162 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 20:28:52 | INFO     | infobot.core.bot:start:174 - 開始監控 1 位老師的消息
+2025-06-03 20:28:52 | INFO     | infobot.core.bot:start:183 - 預先打開 2 個聊天窗口（1 位老師 + 1 位學生）
+2025-06-03 20:28:52 | INFO     | infobot.core.bot:start:187 - 正在打開老師聊天窗口...
+2025-06-03 20:28:52 | INFO     | infobot.core.wechat_controller:open_chat_windows:131 - 開始打開 1 個聊天窗口
+2025-06-03 20:29:07 | INFO     | __main__:signal_handler:29 - 收到信號 2，正在關閉機器人...
+2025-06-03 20:29:07 | WARNING  | infobot.core.bot:stop:254 - 機器人未在運行
+2025-06-03 20:29:07 | INFO     | __main__:signal_handler:34 - 機器人已關閉
+2025-06-03 20:29:07 | WARNING  | infobot.core.bot:stop:254 - 機器人未在運行
+2025-06-03 20:32:31 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 20:32:31 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 20:32:31 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 20:32:31 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 20:32:31 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 20:32:31 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 20:32:31 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 20:32:31 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 20:32:31 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 20:32:31 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 20:32:33 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 20:32:33 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 20:32:33 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 20:32:33 | INFO     | __main__:main:115 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 20:32:33 | INFO     | __main__:main:116 -   - 日誌級別: INFO
+2025-06-03 20:32:33 | INFO     | __main__:main:117 - 
+2025-06-03 20:32:33 | INFO     | __main__:main:120 - 📚 老師列表 (共 1 位):
+2025-06-03 20:32:33 | INFO     | __main__:main:123 -      1. 南理 計科24 羅林海
+2025-06-03 20:32:33 | INFO     | __main__:main:126 - 
+2025-06-03 20:32:33 | INFO     | __main__:main:129 - 🎓 學生列表 (共 1 位):
+2025-06-03 20:32:33 | INFO     | __main__:main:132 -      1. 東南 信息24 陸雨陽
+2025-06-03 20:32:33 | INFO     | __main__:main:135 - 
+2025-06-03 20:32:33 | INFO     | __main__:main:149 - 
+==================================================
+2025-06-03 20:32:33 | INFO     | __main__:main:150 - 重要提醒:
+2025-06-03 20:32:33 | INFO     | __main__:main:151 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 20:32:33 | INFO     | __main__:main:152 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 20:32:33 | INFO     | __main__:main:153 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 20:32:33 | INFO     | __main__:main:154 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 20:32:33 | INFO     | __main__:main:155 - ==================================================
+
+2025-06-03 20:32:33 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 20:32:35 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:32:35 | INFO     | infobot.core.bot:_setup_scheduled_tasks:207 - 定時任務設置完成
+2025-06-03 20:32:35 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:207 - 開始監控 1 個聯繫人的消息
+2025-06-03 20:32:35 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:162 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 20:32:36 | INFO     | infobot.core.bot:start:172 - 開始監控 1 位老師的消息
+2025-06-03 20:32:36 | INFO     | infobot.core.bot:start:178 - 正在打開 2 個聊天窗口（1 位老師 + 1 位學生）
+2025-06-03 20:32:36 | INFO     | infobot.core.wechat_controller:open_chat_windows:131 - 開始打開 2 個聊天窗口
+2025-06-03 20:32:58 | INFO     | infobot.core.wechat_controller:open_chat_windows:141 - ✅ 成功打開 南理 計科24 羅林海 的聊天窗口
+2025-06-03 20:35:24 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 20:35:24 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 20:35:24 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 20:35:24 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 20:35:24 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 20:35:24 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 20:35:24 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 20:35:24 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 20:35:24 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 20:35:24 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 20:35:26 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 20:35:26 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 20:35:26 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 20:35:26 | INFO     | __main__:main:115 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 20:35:26 | INFO     | __main__:main:116 -   - 日誌級別: INFO
+2025-06-03 20:35:26 | INFO     | __main__:main:117 - 
+2025-06-03 20:35:26 | INFO     | __main__:main:120 - 📚 老師列表 (共 1 位):
+2025-06-03 20:35:26 | INFO     | __main__:main:123 -      1. 南理 計科24 羅林海
+2025-06-03 20:35:26 | INFO     | __main__:main:126 - 
+2025-06-03 20:35:26 | INFO     | __main__:main:129 - 🎓 學生列表 (共 1 位):
+2025-06-03 20:35:26 | INFO     | __main__:main:132 -      1. 東南 信息24 陸雨陽
+2025-06-03 20:35:26 | INFO     | __main__:main:135 - 
+2025-06-03 20:35:26 | INFO     | __main__:main:149 - 
+==================================================
+2025-06-03 20:35:26 | INFO     | __main__:main:150 - 重要提醒:
+2025-06-03 20:35:26 | INFO     | __main__:main:151 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 20:35:26 | INFO     | __main__:main:152 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 20:35:26 | INFO     | __main__:main:153 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 20:35:26 | INFO     | __main__:main:154 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 20:35:26 | INFO     | __main__:main:155 - ==================================================
+
+2025-06-03 20:35:26 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 20:35:29 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:35:29 | INFO     | infobot.core.bot:_setup_scheduled_tasks:207 - 定時任務設置完成
+2025-06-03 20:35:29 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:207 - 開始監控 1 個聯繫人的消息
+2025-06-03 20:35:29 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:162 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 20:35:29 | INFO     | infobot.core.bot:start:172 - 開始監控 1 位老師的消息
+2025-06-03 20:35:29 | INFO     | infobot.core.bot:start:178 - 正在打開 2 個聊天窗口（1 位老師 + 1 位學生）
+2025-06-03 20:35:29 | INFO     | infobot.core.wechat_controller:open_chat_windows:131 - 開始打開 2 個聊天窗口
+2025-06-03 20:35:47 | INFO     | infobot.core.wechat_controller:open_chat_windows:141 - ✅ 成功打開 南理 計科24 羅林海 的聊天窗口
+2025-06-03 20:36:07 | INFO     | infobot.core.wechat_controller:open_chat_windows:141 - ✅ 成功打開 東南 信息24 陸雨陽 的聊天窗口
+2025-06-03 20:36:07 | INFO     | infobot.core.bot:start:184 - 聊天窗口打開完成: 2/2 成功
+2025-06-03 20:36:07 | INFO     | infobot.core.bot:start:191 - InfoBot 啟動成功！
+2025-06-03 20:36:07 | INFO     | infobot.core.bot:_run_main_loop:211 - 進入主運行循環
+2025-06-03 20:42:24 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 20:42:24 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 20:42:24 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 20:42:24 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 20:42:24 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 20:42:24 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 20:42:24 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 20:42:24 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 20:42:24 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 20:42:24 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 20:42:26 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 20:42:26 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 20:42:26 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 20:42:26 | INFO     | __main__:main:115 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 20:42:26 | INFO     | __main__:main:116 -   - 日誌級別: INFO
+2025-06-03 20:42:26 | INFO     | __main__:main:117 - 
+2025-06-03 20:42:26 | INFO     | __main__:main:120 - 📚 老師列表 (共 1 位):
+2025-06-03 20:42:26 | INFO     | __main__:main:123 -      1. 南理 計科24 羅林海
+2025-06-03 20:42:26 | INFO     | __main__:main:126 - 
+2025-06-03 20:42:26 | INFO     | __main__:main:129 - 🎓 學生列表 (共 1 位):
+2025-06-03 20:42:26 | INFO     | __main__:main:132 -      1. 東南 信息24 陸雨陽
+2025-06-03 20:42:26 | INFO     | __main__:main:135 - 
+2025-06-03 20:42:26 | INFO     | __main__:main:149 - 
+==================================================
+2025-06-03 20:42:26 | INFO     | __main__:main:150 - 重要提醒:
+2025-06-03 20:42:26 | INFO     | __main__:main:151 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 20:42:26 | INFO     | __main__:main:152 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 20:42:26 | INFO     | __main__:main:153 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 20:42:26 | INFO     | __main__:main:154 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 20:42:26 | INFO     | __main__:main:155 - ==================================================
+
+2025-06-03 20:42:26 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 20:42:28 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:42:28 | INFO     | infobot.core.bot:_setup_scheduled_tasks:207 - 定時任務設置完成
+2025-06-03 20:42:28 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:206 - 開始監控 1 個聯繫人的消息
+2025-06-03 20:42:28 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:161 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 20:42:28 | INFO     | infobot.core.bot:start:172 - 開始監控 1 位老師的消息
+2025-06-03 20:42:28 | INFO     | infobot.core.bot:start:178 - 正在打開 2 個聊天窗口（1 位老師 + 1 位學生）
+2025-06-03 20:42:28 | INFO     | infobot.core.wechat_controller:open_chat_windows:131 - 開始打開 2 個聊天窗口
+2025-06-03 20:42:41 | INFO     | infobot.core.wechat_controller:open_chat_windows:141 - ✅ 成功打開 南理 計科24 羅林海 的聊天窗口
+2025-06-03 20:42:53 | INFO     | infobot.core.wechat_controller:open_chat_windows:141 - ✅ 成功打開 東南 信息24 陸雨陽 的聊天窗口
+2025-06-03 20:42:53 | INFO     | infobot.core.bot:start:184 - 聊天窗口打開完成: 2/2 成功
+2025-06-03 20:42:53 | INFO     | infobot.core.bot:start:191 - InfoBot 啟動成功！
+2025-06-03 20:42:53 | INFO     | infobot.core.bot:_run_main_loop:211 - 進入主運行循環
+2025-06-03 20:45:13 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 20:45:13 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 20:45:13 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 20:45:13 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 20:45:13 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 20:45:13 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 20:45:13 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 20:45:13 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 20:45:13 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 20:45:13 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 20:45:15 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 20:45:15 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 20:45:15 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 20:45:15 | INFO     | __main__:main:115 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 20:45:15 | INFO     | __main__:main:116 -   - 日誌級別: INFO
+2025-06-03 20:45:15 | INFO     | __main__:main:117 - 
+2025-06-03 20:45:15 | INFO     | __main__:main:120 - 📚 老師列表 (共 1 位):
+2025-06-03 20:45:15 | INFO     | __main__:main:123 -      1. 南理 計科24 羅林海
+2025-06-03 20:45:15 | INFO     | __main__:main:126 - 
+2025-06-03 20:45:15 | INFO     | __main__:main:129 - 🎓 學生列表 (共 1 位):
+2025-06-03 20:45:15 | INFO     | __main__:main:132 -      1. 東南 信息24 陸雨陽
+2025-06-03 20:45:15 | INFO     | __main__:main:135 - 
+2025-06-03 20:45:15 | INFO     | __main__:main:149 - 
+==================================================
+2025-06-03 20:45:15 | INFO     | __main__:main:150 - 重要提醒:
+2025-06-03 20:45:15 | INFO     | __main__:main:151 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 20:45:15 | INFO     | __main__:main:152 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 20:45:15 | INFO     | __main__:main:153 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 20:45:15 | INFO     | __main__:main:154 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 20:45:15 | INFO     | __main__:main:155 - ==================================================
+
+2025-06-03 20:45:15 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 20:45:17 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:45:17 | INFO     | infobot.core.bot:_setup_scheduled_tasks:207 - 定時任務設置完成
+2025-06-03 20:45:17 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:206 - 開始監控 1 個聯繫人的消息
+2025-06-03 20:45:17 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:161 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 20:45:17 | INFO     | infobot.core.bot:start:172 - 開始監控 1 位老師的消息
+2025-06-03 20:45:17 | INFO     | infobot.core.bot:start:178 - 正在打開 2 個聊天窗口（1 位老師 + 1 位學生）
+2025-06-03 20:45:17 | INFO     | infobot.core.wechat_controller:open_chat_windows:131 - 開始打開 2 個聊天窗口
+2025-06-03 20:45:29 | INFO     | infobot.core.wechat_controller:open_chat_windows:141 - ✅ 成功打開 南理 計科24 羅林海 的聊天窗口
+2025-06-03 20:45:40 | INFO     | infobot.core.wechat_controller:open_chat_windows:141 - ✅ 成功打開 東南 信息24 陸雨陽 的聊天窗口
+2025-06-03 20:45:40 | INFO     | infobot.core.bot:start:184 - 聊天窗口打開完成: 2/2 成功
+2025-06-03 20:45:40 | INFO     | infobot.core.bot:start:191 - InfoBot 啟動成功！
+2025-06-03 20:45:40 | INFO     | infobot.core.bot:_run_main_loop:211 - 進入主運行循環
+2025-06-03 20:49:51 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 20:49:51 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 20:49:51 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 20:49:51 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 20:49:51 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 20:49:51 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 20:49:51 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 20:49:51 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 20:49:51 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 20:49:51 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 20:49:52 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 20:49:52 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 20:49:52 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 20:49:52 | INFO     | __main__:main:115 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 20:49:52 | INFO     | __main__:main:116 -   - 日誌級別: INFO
+2025-06-03 20:49:52 | INFO     | __main__:main:117 - 
+2025-06-03 20:49:52 | INFO     | __main__:main:120 - 📚 老師列表 (共 1 位):
+2025-06-03 20:49:52 | INFO     | __main__:main:123 -      1. 南理 計科24 羅林海
+2025-06-03 20:49:52 | INFO     | __main__:main:126 - 
+2025-06-03 20:49:52 | INFO     | __main__:main:129 - 🎓 學生列表 (共 1 位):
+2025-06-03 20:49:52 | INFO     | __main__:main:132 -      1. 東南 信息24 陸雨陽
+2025-06-03 20:49:52 | INFO     | __main__:main:135 - 
+2025-06-03 20:49:52 | INFO     | __main__:main:149 - 
+==================================================
+2025-06-03 20:49:52 | INFO     | __main__:main:150 - 重要提醒:
+2025-06-03 20:49:52 | INFO     | __main__:main:151 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 20:49:52 | INFO     | __main__:main:152 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 20:49:52 | INFO     | __main__:main:153 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 20:49:52 | INFO     | __main__:main:154 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 20:49:52 | INFO     | __main__:main:155 - ==================================================
+
+2025-06-03 20:49:52 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 20:49:53 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:49:53 | INFO     | infobot.core.bot:_setup_scheduled_tasks:207 - 定時任務設置完成
+2025-06-03 20:49:53 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:205 - 開始監控 1 個聯繫人的消息
+2025-06-03 20:49:53 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:160 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 20:49:53 | INFO     | infobot.core.bot:start:172 - 開始監控 1 位老師的消息
+2025-06-03 20:49:53 | INFO     | infobot.core.bot:start:178 - 正在打開 2 個聊天窗口（1 位老師 + 1 位學生）
+2025-06-03 20:49:53 | INFO     | infobot.core.wechat_controller:open_chat_windows:130 - 開始打開 2 個聊天窗口
+2025-06-03 20:49:59 | INFO     | infobot.core.wechat_controller:open_chat_windows:140 - ✅ 成功打開 南理 計科24 羅林海 的聊天窗口
+2025-06-03 20:50:05 | INFO     | infobot.core.wechat_controller:open_chat_windows:140 - ✅ 成功打開 東南 信息24 陸雨陽 的聊天窗口
+2025-06-03 20:50:05 | INFO     | infobot.core.bot:start:184 - 聊天窗口打開完成: 2/2 成功
+2025-06-03 20:50:05 | INFO     | infobot.core.bot:start:191 - InfoBot 啟動成功！
+2025-06-03 20:50:05 | INFO     | infobot.core.bot:_run_main_loop:211 - 進入主運行循環
+2025-06-03 20:50:14 | INFO     | __main__:signal_handler:29 - 收到信號 2，正在關閉機器人...
+2025-06-03 20:50:14 | INFO     | infobot.core.bot:stop:243 - 正在停止 InfoBot...
+2025-06-03 20:50:14 | INFO     | infobot.core.wechat_controller:stop_all_monitoring:219 - 停止所有消息監控
+2025-06-03 20:50:14 | INFO     | infobot.core.bot:_generate_final_report:313 - 
+📈 【InfoBot 運行總結】
+總運行時間: 0天 0小時 0分鐘
+總收到消息: 0
+總發送消息: 0
+總轉發消息: 0
+總自動回覆: 0
+        
+2025-06-03 20:50:14 | INFO     | infobot.core.bot:stop:253 - InfoBot 已停止
+2025-06-03 20:50:14 | INFO     | __main__:signal_handler:34 - 機器人已關閉
+2025-06-03 20:50:14 | WARNING  | infobot.core.bot:stop:240 - 機器人未在運行
+2025-06-03 20:50:14 | WARNING  | infobot.core.bot:stop:240 - 機器人未在運行
+2025-06-03 20:50:45 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 20:50:45 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 20:50:45 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 20:50:45 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 20:50:45 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 20:50:45 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 20:50:45 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 20:50:45 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 20:50:45 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 20:50:45 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 20:50:46 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 20:50:46 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 20:50:46 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 20:50:46 | INFO     | __main__:main:115 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 20:50:46 | INFO     | __main__:main:116 -   - 日誌級別: INFO
+2025-06-03 20:50:46 | INFO     | __main__:main:117 - 
+2025-06-03 20:50:46 | INFO     | __main__:main:120 - 📚 老師列表 (共 1 位):
+2025-06-03 20:50:46 | INFO     | __main__:main:123 -      1. 南理 計科24 羅林海
+2025-06-03 20:50:46 | INFO     | __main__:main:126 - 
+2025-06-03 20:50:46 | INFO     | __main__:main:129 - 🎓 學生列表 (共 1 位):
+2025-06-03 20:50:46 | INFO     | __main__:main:132 -      1. 東南 信息24 陸雨陽
+2025-06-03 20:50:46 | INFO     | __main__:main:135 - 
+2025-06-03 20:50:46 | INFO     | __main__:main:149 - 
+==================================================
+2025-06-03 20:50:46 | INFO     | __main__:main:150 - 重要提醒:
+2025-06-03 20:50:46 | INFO     | __main__:main:151 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 20:50:46 | INFO     | __main__:main:152 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 20:50:46 | INFO     | __main__:main:153 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 20:50:46 | INFO     | __main__:main:154 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 20:50:46 | INFO     | __main__:main:155 - ==================================================
+
+2025-06-03 20:50:46 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 20:50:47 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:50:47 | INFO     | infobot.core.bot:_setup_scheduled_tasks:207 - 定時任務設置完成
+2025-06-03 20:50:47 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:205 - 開始監控 1 個聯繫人的消息
+2025-06-03 20:50:47 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:160 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 20:50:47 | INFO     | infobot.core.bot:start:172 - 開始監控 1 位老師的消息
+2025-06-03 20:50:47 | INFO     | infobot.core.bot:start:178 - 正在打開 2 個聊天窗口（1 位老師 + 1 位學生）
+2025-06-03 20:50:47 | INFO     | infobot.core.wechat_controller:open_chat_windows:130 - 開始打開 2 個聊天窗口
+2025-06-03 20:50:53 | INFO     | infobot.core.wechat_controller:open_chat_windows:140 - ✅ 成功打開 南理 計科24 羅林海 的聊天窗口
+2025-06-03 20:50:59 | INFO     | infobot.core.wechat_controller:open_chat_windows:140 - ✅ 成功打開 東南 信息24 陸雨陽 的聊天窗口
+2025-06-03 20:50:59 | INFO     | infobot.core.bot:start:184 - 聊天窗口打開完成: 2/2 成功
+2025-06-03 20:50:59 | INFO     | infobot.core.bot:start:191 - InfoBot 啟動成功！
+2025-06-03 20:50:59 | INFO     | infobot.core.bot:_run_main_loop:211 - 進入主運行循環
+2025-06-03 20:51:56 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 20:51:56 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 20:51:56 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 20:51:56 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 20:51:56 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 20:51:56 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 20:51:56 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 20:51:56 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 20:51:56 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 20:51:56 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 20:51:58 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 20:51:58 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 20:51:58 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 20:51:58 | INFO     | __main__:main:115 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 20:51:58 | INFO     | __main__:main:116 -   - 日誌級別: INFO
+2025-06-03 20:51:58 | INFO     | __main__:main:117 - 
+2025-06-03 20:51:58 | INFO     | __main__:main:120 - 📚 老師列表 (共 1 位):
+2025-06-03 20:51:58 | INFO     | __main__:main:123 -      1. 南理 計科24 羅林海
+2025-06-03 20:51:58 | INFO     | __main__:main:126 - 
+2025-06-03 20:51:58 | INFO     | __main__:main:129 - 🎓 學生列表 (共 1 位):
+2025-06-03 20:51:58 | INFO     | __main__:main:132 -      1. 東南 信息24 陸雨陽
+2025-06-03 20:51:58 | INFO     | __main__:main:135 - 
+2025-06-03 20:51:58 | INFO     | __main__:main:149 - 
+==================================================
+2025-06-03 20:51:58 | INFO     | __main__:main:150 - 重要提醒:
+2025-06-03 20:51:58 | INFO     | __main__:main:151 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 20:51:58 | INFO     | __main__:main:152 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 20:51:58 | INFO     | __main__:main:153 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 20:51:58 | INFO     | __main__:main:154 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 20:51:58 | INFO     | __main__:main:155 - ==================================================
+
+2025-06-03 20:51:58 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 20:51:59 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:51:59 | INFO     | infobot.core.bot:_setup_scheduled_tasks:207 - 定時任務設置完成
+2025-06-03 20:51:59 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:205 - 開始監控 1 個聯繫人的消息
+2025-06-03 20:51:59 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:160 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 20:51:59 | INFO     | infobot.core.bot:start:172 - 開始監控 1 位老師的消息
+2025-06-03 20:51:59 | INFO     | infobot.core.bot:start:178 - 正在打開 2 個聊天窗口（1 位老師 + 1 位學生）
+2025-06-03 20:51:59 | INFO     | infobot.core.wechat_controller:open_chat_windows:130 - 開始打開 2 個聊天窗口
+2025-06-03 20:52:05 | INFO     | infobot.core.wechat_controller:open_chat_windows:140 - ✅ 成功打開 南理 計科24 羅林海 的聊天窗口
+2025-06-03 20:52:10 | INFO     | infobot.core.wechat_controller:open_chat_windows:140 - ✅ 成功打開 東南 信息24 陸雨陽 的聊天窗口
+2025-06-03 20:52:10 | INFO     | infobot.core.bot:start:184 - 聊天窗口打開完成: 2/2 成功
+2025-06-03 20:52:10 | INFO     | infobot.core.bot:start:191 - InfoBot 啟動成功！
+2025-06-03 20:52:10 | INFO     | infobot.core.bot:_run_main_loop:211 - 進入主運行循環
+2025-06-03 20:55:30 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 20:55:30 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 20:55:30 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 20:55:30 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 20:55:30 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 20:55:30 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 20:55:30 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 20:55:30 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 20:55:30 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 20:55:30 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 20:55:31 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 20:55:31 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 20:55:31 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 20:55:31 | INFO     | __main__:main:115 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 20:55:31 | INFO     | __main__:main:116 -   - 日誌級別: INFO
+2025-06-03 20:55:31 | INFO     | __main__:main:117 - 
+2025-06-03 20:55:31 | INFO     | __main__:main:120 - 📚 老師列表 (共 1 位):
+2025-06-03 20:55:31 | INFO     | __main__:main:123 -      1. 南理 計科24 羅林海
+2025-06-03 20:55:31 | INFO     | __main__:main:126 - 
+2025-06-03 20:55:31 | INFO     | __main__:main:129 - 🎓 學生列表 (共 1 位):
+2025-06-03 20:55:31 | INFO     | __main__:main:132 -      1. 東南 信息24 陸雨陽
+2025-06-03 20:55:31 | INFO     | __main__:main:135 - 
+2025-06-03 20:55:31 | INFO     | __main__:main:149 - 
+==================================================
+2025-06-03 20:55:31 | INFO     | __main__:main:150 - 重要提醒:
+2025-06-03 20:55:31 | INFO     | __main__:main:151 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 20:55:31 | INFO     | __main__:main:152 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 20:55:31 | INFO     | __main__:main:153 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 20:55:31 | INFO     | __main__:main:154 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 20:55:31 | INFO     | __main__:main:155 - ==================================================
+
+2025-06-03 20:55:31 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 20:55:32 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:55:32 | INFO     | infobot.core.bot:_setup_scheduled_tasks:207 - 定時任務設置完成
+2025-06-03 20:55:32 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:205 - 開始監控 1 個聯繫人的消息
+2025-06-03 20:55:32 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:160 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 20:55:32 | INFO     | infobot.core.bot:start:172 - 開始監控 1 位老師的消息
+2025-06-03 20:55:32 | INFO     | infobot.core.bot:start:178 - 正在打開 2 個聊天窗口（1 位老師 + 1 位學生）
+2025-06-03 20:55:32 | INFO     | infobot.core.wechat_controller:open_chat_windows:130 - 開始打開 2 個聊天窗口
+2025-06-03 20:55:38 | INFO     | infobot.core.wechat_controller:open_chat_windows:140 - ✅ 成功打開 南理 計科24 羅林海 的聊天窗口
+2025-06-03 20:55:44 | INFO     | infobot.core.wechat_controller:open_chat_windows:140 - ✅ 成功打開 東南 信息24 陸雨陽 的聊天窗口
+2025-06-03 20:55:44 | INFO     | infobot.core.bot:start:184 - 聊天窗口打開完成: 2/2 成功
+2025-06-03 20:55:44 | INFO     | infobot.core.bot:start:191 - InfoBot 啟動成功！
+2025-06-03 20:55:44 | INFO     | infobot.core.bot:_run_main_loop:211 - 進入主運行循環
+2025-06-03 20:56:03 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 20:56:03 | INFO     | __main__:main:92 - ==================================================
+2025-06-03 20:56:03 | INFO     | __main__:main:93 - InfoBot - 智能微信機器人 啟動中...
+2025-06-03 20:56:03 | INFO     | __main__:main:94 - ==================================================
+2025-06-03 20:56:03 | INFO     | __main__:check_requirements:44 - 正在檢查微信運行狀態...
+2025-06-03 20:56:03 | INFO     | __main__:check_requirements:56 - ✅ 檢測到微信進程：8 個
+2025-06-03 20:56:03 | INFO     | __main__:check_requirements:63 - ✅ 權限檢查已簡化，將在初始化時驗證
+2025-06-03 20:56:03 | INFO     | __main__:check_requirements:80 - ✅ 所有前提條件檢查通過
+2025-06-03 20:56:03 | INFO     | __main__:main:107 - 正在初始化 InfoBot...
+2025-06-03 20:56:03 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 20:56:04 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 20:56:04 | INFO     | infobot.core.bot:__init__:48 - InfoBot 初始化完成
+2025-06-03 20:56:04 | INFO     | __main__:main:114 - 配置載入完成:
+2025-06-03 20:56:04 | INFO     | __main__:main:115 -   - AI模型: Pro/deepseek-ai/DeepSeek-R1-0120
+2025-06-03 20:56:04 | INFO     | __main__:main:116 -   - 日誌級別: INFO
+2025-06-03 20:56:04 | INFO     | __main__:main:117 - 
+2025-06-03 20:56:04 | INFO     | __main__:main:120 - 📚 老師列表 (共 1 位):
+2025-06-03 20:56:04 | INFO     | __main__:main:123 -      1. 南理 計科24 羅林海
+2025-06-03 20:56:04 | INFO     | __main__:main:126 - 
+2025-06-03 20:56:04 | INFO     | __main__:main:129 - 🎓 學生列表 (共 1 位):
+2025-06-03 20:56:04 | INFO     | __main__:main:132 -      1. 東南 信息24 陸雨陽
+2025-06-03 20:56:04 | INFO     | __main__:main:135 - 
+2025-06-03 20:56:04 | INFO     | __main__:main:149 - 
+==================================================
+2025-06-03 20:56:04 | INFO     | __main__:main:150 - 重要提醒:
+2025-06-03 20:56:04 | INFO     | __main__:main:151 - 1. 請確保已給予終端機「輔助功能」權限
+2025-06-03 20:56:04 | INFO     | __main__:main:152 - 2. 請確保 WeChat 桌面版已啟動並登錄
+2025-06-03 20:56:04 | INFO     | __main__:main:153 - 3. 機器人將自動監控老師消息並轉發給學生
+2025-06-03 20:56:04 | INFO     | __main__:main:154 - 4. 按 Ctrl+C 可優雅停止機器人
+2025-06-03 20:56:04 | INFO     | __main__:main:155 - ==================================================
+
+2025-06-03 20:56:04 | INFO     | infobot.core.bot:start:155 - 正在啟動 InfoBot...
+2025-06-03 20:56:06 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:56:06 | INFO     | infobot.core.bot:_setup_scheduled_tasks:207 - 定時任務設置完成
+2025-06-03 20:56:06 | INFO     | infobot.core.wechat_controller:start_monitoring_multiple_contacts:205 - 開始監控 1 個聯繫人的消息
+2025-06-03 20:56:06 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:160 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 20:56:06 | INFO     | infobot.core.bot:start:172 - 開始監控 1 位老師的消息
+2025-06-03 20:56:06 | INFO     | infobot.core.bot:start:178 - 正在打開 2 個聊天窗口（1 位老師 + 1 位學生）
+2025-06-03 20:56:06 | INFO     | infobot.core.wechat_controller:open_chat_windows:130 - 開始打開 2 個聊天窗口
+2025-06-03 20:56:12 | INFO     | infobot.core.wechat_controller:open_chat_windows:140 - ✅ 成功打開 南理 計科24 羅林海 的聊天窗口
+2025-06-03 20:56:17 | INFO     | infobot.core.wechat_controller:open_chat_windows:140 - ✅ 成功打開 東南 信息24 陸雨陽 的聊天窗口
+2025-06-03 20:56:17 | INFO     | infobot.core.bot:start:184 - 聊天窗口打開完成: 2/2 成功
+2025-06-03 20:56:17 | INFO     | infobot.core.bot:start:191 - InfoBot 啟動成功！
+2025-06-03 20:56:17 | INFO     | infobot.core.bot:_run_main_loop:211 - 進入主運行循環
+2025-06-03 20:59:23 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: DEBUG
+2025-06-03 20:59:24 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 20:59:25 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 20:59:26 | INFO     | infobot.core.wechat_controller:check_wechat_status:64 - WeChat 狀態正常
+2025-06-03 20:59:26 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:160 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 20:59:26 | INFO     | infobot.core.wechat_controller:monitor_loop:209 - 停止監控 南理 計科24 羅林海
+2025-06-03 21:02:27 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 21:08:24 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 21:08:24 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 21:08:25 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 21:08:25 | ERROR    | __main__:main:82 - 測試過程中發生錯誤: string indices must be integers, not 'str'
+2025-06-03 21:13:13 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 21:13:13 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 21:13:14 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 21:13:14 | INFO     | infobot.core.wechat_controller:start_monitoring_all_contacts:203 - 開始監控所有配置的聯繫人...
+2025-06-03 21:13:14 | INFO     | infobot.core.wechat_controller:start_monitoring_all_contacts:218 - 準備監控聯繫人: 南理 計科24 羅林海
+2025-06-03 21:13:14 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:160 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 21:13:14 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:199 - ✅ 已啟動 南理 計科24 羅林海 的監控線程
+2025-06-03 21:13:15 | INFO     | infobot.core.wechat_controller:start_monitoring_all_contacts:218 - 準備監控聯繫人: 東南 信息24 陸雨陽
+2025-06-03 21:13:15 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:160 - 開始監控 東南 信息24 陸雨陽 的消息
+2025-06-03 21:13:15 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:199 - ✅ 已啟動 東南 信息24 陸雨陽 的監控線程
+2025-06-03 21:13:15 | INFO     | infobot.core.wechat_controller:start_monitoring_all_contacts:227 - ✅ 已啟動 2 個聯繫人的監控
+2025-06-03 21:16:51 | ERROR    | __main__:main:82 - 測試過程中發生錯誤: 'WeChatController' object has no attribute 'stop_monitoring_all'
+2025-06-03 21:19:29 | INFO     | infobot.utils.logger:setup_logger:37 - 日誌系統已初始化，級別: INFO
+2025-06-03 21:19:29 | INFO     | infobot.core.wechat_controller:_initialize_wechat:40 - 正在初始化 wxauto_macos...
+2025-06-03 21:19:30 | INFO     | infobot.core.wechat_controller:_initialize_wechat:42 - ✅ wxauto_macos 初始化成功
+2025-06-03 21:19:30 | INFO     | infobot.core.wechat_controller:start_monitoring_all_contacts:203 - 開始監控所有配置的聯繫人...
+2025-06-03 21:19:30 | INFO     | infobot.core.wechat_controller:start_monitoring_all_contacts:218 - 準備監控聯繫人: 南理 計科24 羅林海
+2025-06-03 21:19:30 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:160 - 開始監控 南理 計科24 羅林海 的消息
+2025-06-03 21:19:30 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:199 - ✅ 已啟動 南理 計科24 羅林海 的監控線程
+2025-06-03 21:19:30 | INFO     | infobot.core.wechat_controller:start_monitoring_all_contacts:218 - 準備監控聯繫人: 東南 信息24 陸雨陽
+2025-06-03 21:19:30 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:160 - 開始監控 東南 信息24 陸雨陽 的消息
+2025-06-03 21:19:30 | INFO     | infobot.core.wechat_controller:start_monitoring_contact:199 - ✅ 已啟動 東南 信息24 陸雨陽 的監控線程
+2025-06-03 21:19:31 | INFO     | infobot.core.wechat_controller:start_monitoring_all_contacts:227 - ✅ 已啟動 2 個聯繫人的監控
+2025-06-03 21:19:32 | ERROR    | __main__:main:82 - 測試過程中發生錯誤: 'WeChatController' object has no attribute 'stop_monitoring_all'

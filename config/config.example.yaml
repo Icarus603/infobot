@@ -1,0 +1,37 @@
+# InfoBot 配置文件模板
+# 請複製此文件為 config.yaml 並填入實際配置
+
+# 基本配置
+debug: false
+log_level: "INFO"
+
+# SiliconFlow API 配置
+siliconflow:
+  api_key: "your_siliconflow_api_key_here"  # 請填入您的 SiliconFlow API Key
+  base_url: "https://api.siliconflow.cn/v1"
+  model: "Pro/deepseek-ai/DeepSeek-R1-0120"
+  max_tokens: 512
+  temperature: 0.7
+
+# WeChat 自動化配置
+wechat_automation:
+  search_delay: 1.5    # 搜索延遲時間（秒）
+  click_delay: 0.8     # 點擊延遲時間（秒）
+  message_delay: 0.5   # 消息發送延遲時間（秒）
+  retry_times: 3       # 重試次數
+
+# 老師配置（微信備註名稱）
+teachers:
+  - "張教授"
+  - "李老師"
+  - "王導師"
+
+# 學生配置（微信備註名稱）
+students:
+  - "小明"
+  - "小紅"
+  - "小李"
+  - "小張"
+  - "小王"
+  - "研究生A"
+  - "研究生B" 

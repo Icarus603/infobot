@@ -1,0 +1,25 @@
+# InfoBot 配置文件模板
+# 請複製此文件為 config.yaml 並填入實際配置
+
+# 基本配置
+debug: false
+log_level: "INFO"
+
+# SiliconFlow API 配置
+siliconflow:
+  api_key: "sk-yokoeynllmififllnhfhaivshgfddiyrqhvfvbvnstqiihgj"  # 請填入您的 SiliconFlow API Key
+  base_url: "https://api.siliconflow.cn/v1"
+  model: "Pro/deepseek-ai/DeepSeek-R1-0120"
+  max_tokens: 512
+  temperature: 0.5
+
+# WeChat 自動化配置已移至 wxauto_macos 內部管理
+
+# 老師配置（微信備註名稱）
+teachers:
+  - "南理 計科24 羅林海"
+
+# 學生配置（微信備註名稱）
+students:
+  - "東南 信息24 陸雨陽"
+ 
