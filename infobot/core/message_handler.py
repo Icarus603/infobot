@@ -160,13 +160,13 @@ class MessageHandler:
         # 檢查重要關鍵詞
         important_keywords = self.config.prompts.get("important_keywords", [])
         for keyword in important_keywords:
-            if keyword in content_lower:
+            if keyword.lower() in content_lower:
                 return True
         
         # 檢查非重要關鍵詞
         unimportant_keywords = self.config.prompts.get("unimportant_keywords", [])
         for keyword in unimportant_keywords:
-            if keyword in content_lower:
+            if keyword.lower() in content_lower:
                 return False
         
         # 預設情況下，如果消息足夠長且來自老師，則轉發

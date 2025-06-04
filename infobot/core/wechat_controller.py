@@ -156,6 +156,9 @@ class WeChatController:
         if contact_name in self.monitor_threads:
             logger.warning(f"已經在監控 {contact_name} 的消息")
             return
+
+        # 啟動監控前將狀態設置為 True
+        self.is_monitoring = True
         
         logger.info(f"開始監控 {contact_name} 的消息")
         
@@ -195,8 +198,19 @@ class WeChatController:
         thread = threading.Thread(target=monitor_loop, daemon=True)
         thread.start()
         self.monitor_threads[contact_name] = thread
-        
+
         logger.info(f"✅ 已啟動 {contact_name} 的監控線程")
+
+    def start_monitoring_multiple_contacts(self, contact_names: List[str], check_interval: float = 3.0):
+        """批量啟動多個聯繫人的監控"""
+        if not contact_names:
+            logger.warning("沒有提供任何聯繫人，無法開始監控")
+            return
+
+        for index, name in enumerate(contact_names):
+            interval = check_interval + index * 1.0
+            self.start_monitoring_contact(name, interval)
+            time.sleep(0.5)
 
     def start_monitoring_all_contacts(self, check_interval: float = 5.0):
         """開始監控所有聯繫人的消息 (改進版)"""
@@ -299,6 +313,10 @@ class WeChatController:
         logger.info("停止所有消息監控")
         self.is_monitoring = False
         self.monitor_threads.clear()
+
+    # 兼容舊方法名
+    def stop_monitoring_all(self):
+        return self.stop_all_monitoring()
     
     def get_opened_windows(self) -> List[str]:
         """獲取已打開的聊天窗口列表"""
