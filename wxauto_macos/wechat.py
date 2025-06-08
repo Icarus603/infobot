@@ -1070,6 +1070,190 @@ class WeChat:
             logger.error(f"檢查新消息指示器時出錯: {e}")
             return False
 
+    def check_contact_new_message(self, contact_name: str) -> bool:
+        """檢查特定聯繫人是否有新消息
+        
+        Args:
+            contact_name: 聯繫人名稱
+            
+        Returns:
+            bool: 該聯繫人是否有新消息
+        """
+        try:
+            logger.debug(f"檢查 {contact_name} 是否有新消息...")
+            
+            script = f'''
+            tell application "System Events"
+                tell process "WeChat"
+                    try
+                        tell window 1
+                            -- 查找包含聯繫人名稱的聊天項目
+                            set contactFound to false
+                            set hasUnread to false
+                            
+                            -- 在聊天列表中搜索該聯繫人
+                            tell splitter group 1
+                                if scroll area 1 exists then
+                                    tell scroll area 1
+                                        if table 1 exists then
+                                            tell table 1
+                                                repeat with tableRow in rows
+                                                    repeat with tableCell in cells of tableRow
+                                                        try
+                                                            if value of tableCell contains "{contact_name}" then
+                                                                set contactFound to true
+                                                                -- 檢查該行是否有未讀指示器
+                                                                repeat with indicator in static texts of tableRow
+                                                                    try
+                                                                        set indicatorValue to value of indicator
+                                                                        if indicatorValue contains "•" or indicatorValue contains "1" or indicatorValue contains "2" or indicatorValue contains "3" or indicatorValue contains "4" or indicatorValue contains "5" or indicatorValue contains "6" or indicatorValue contains "7" or indicatorValue contains "8" or indicatorValue contains "9" then
+                                                                            set hasUnread to true
+                                                                            exit repeat
+                                                                        end if
+                                                                    end try
+                                                                end repeat
+                                                                exit repeat
+                                                            end if
+                                                        end try
+                                                    end repeat
+                                                    if contactFound then exit repeat
+                                                end repeat
+                                            end tell
+                                        end if
+                                    end tell
+                                end if
+                            end tell
+                            
+                            if contactFound and hasUnread then
+                                return "true"
+                            else
+                                return "false"
+                            end if
+                        end tell
+                    on error errorMessage
+                        return "error"
+                    end try
+                end tell
+            end tell
+            '''
+            
+            result = self._run_applescript(script)
+            
+            if result == "true":
+                logger.info(f"🔔 {contact_name} 有新消息!")
+                return True
+            elif result == "false":
+                logger.debug(f"{contact_name} 沒有新消息")
+                return False
+            else:
+                logger.debug(f"檢查 {contact_name} 新消息時遇到問題: {result}")
+                return False
+                
+        except Exception as e:
+            logger.error(f"檢查 {contact_name} 新消息時出錯: {e}")
+            return False
+
+    def get_latest_messages(self, contact_name: str, max_messages: int = 5) -> List[Dict[str, Any]]:
+        """獲取特定聯繫人的最新消息內容
+        
+        Args:
+            contact_name: 聯繫人名稱
+            max_messages: 最多獲取的消息數量
+            
+        Returns:
+            消息列表，每條消息包含 {'sender': str, 'content': str, 'time': str}
+        """
+        try:
+            logger.debug(f"正在獲取 {contact_name} 的最新消息...")
+            
+            # 首先打開該聯繫人的對話
+            if not self._open_chat(contact_name):
+                logger.error(f"無法打開與 {contact_name} 的對話")
+                return []
+            
+            # 等待對話窗口完全載入
+            time.sleep(1)
+            
+            script = f'''
+            tell application "System Events"
+                tell process "WeChat"
+                    try
+                        tell window 1
+                            -- 查找聊天消息區域
+                            set messageList to {{}}
+                            
+                            -- 嘗試在聊天區域查找消息
+                            repeat with scrollArea in scroll areas
+                                try
+                                    tell scrollArea
+                                        -- 查找消息文本
+                                        repeat with textElement in static texts
+                                            try
+                                                set messageText to value of textElement
+                                                if messageText is not missing value and messageText ≠ "" then
+                                                    -- 過濾掉界面元素文字，只保留消息內容
+                                                    if messageText does not contain "輸入" and messageText does not contain "搜尋" and messageText does not contain "搜索" and length of messageText > 2 then
+                                                        set end of messageList to messageText
+                                                    end if
+                                                end if
+                                            end try
+                                        end repeat
+                                    end tell
+                                end try
+                            end repeat
+                            
+                            -- 返回消息列表（最多 {max_messages} 條）
+                            set resultList to {{}}
+                            set messageCount to count of messageList
+                            set startIndex to messageCount - {max_messages - 1}
+                            if startIndex < 1 then set startIndex to 1
+                            
+                            repeat with i from startIndex to messageCount
+                                set end of resultList to item i of messageList
+                            end repeat
+                            
+                            -- 將列表轉換為字符串返回
+                            set AppleScript's text item delimiters to "|||"
+                            set resultString to resultList as string
+                            set AppleScript's text item delimiters to ""
+                            
+                            return resultString
+                        end tell
+                    on error errorMessage
+                        return "error: " & errorMessage
+                    end try
+                end tell
+            end tell
+            '''
+            
+            result = self._run_applescript(script)
+            
+            if result and not result.startswith("error"):
+                # 解析消息
+                messages = []
+                if result and result != "":
+                    message_texts = result.split("|||")
+                    current_time = time.strftime("%Y-%m-%d %H:%M:%S")
+                    
+                    for i, msg_text in enumerate(message_texts):
+                        if msg_text.strip():
+                            messages.append({
+                                'sender': contact_name,
+                                'content': msg_text.strip(),
+                                'time': current_time,
+                                'is_new': True
+                            })
+                
+                logger.info(f"✅ 獲取到 {contact_name} 的 {len(messages)} 條消息")
+                return messages
+            else:
+                logger.warning(f"無法獲取 {contact_name} 的消息: {result}")
+                return []
+                
+        except Exception as e:
+            logger.error(f"獲取 {contact_name} 消息時出錯: {e}")
+            return []
+
     def get_chat_window_changes(self) -> Dict[str, Any]:
         """獲取聊天窗口的變化信息
         
@@ -1303,4 +1487,50 @@ class WeChat:
     
     def __repr__(self) -> str:
         """詳細字符串表示"""
-        return self.__str__() 
+        return self.__str__()
+
+    def GetListenMessage(self) -> Dict[str, List[Dict[str, Any]]]:
+        """獲取所有監聽聊天的新消息（仿 wxauto 接口）
+        
+        Returns:
+            字典，鍵為聯繫人名稱，值為消息列表
+        """
+        try:
+            logger.debug("檢查所有監聽聊天的新消息...")
+            
+            # 檢查是否有新消息的聯繫人
+            contacts_with_messages = {}
+            
+            # 首先獲取聊天列表
+            sessions = self.GetSessionList()
+            
+            if not sessions:
+                logger.debug("未獲取到聊天列表")
+                return {}
+            
+            for contact_name in sessions:
+                # 檢查該聯繫人是否有新消息
+                if self.check_contact_new_message(contact_name):
+                    # 獲取最新消息
+                    latest_messages = self.get_latest_messages(contact_name, max_messages=1)
+                    
+                    if latest_messages:
+                        # 轉換為類似 wxauto 的格式
+                        formatted_messages = []
+                        for msg in latest_messages:
+                            formatted_msg = type('Message', (), {
+                                'sender': msg['sender'],
+                                'content': msg['content'],
+                                'time': msg['time'],
+                                'type': 'friend'  # 簡化類型
+                            })()
+                            formatted_messages.append(formatted_msg)
+                        
+                        contacts_with_messages[contact_name] = formatted_messages
+                        logger.info(f"✅ 獲取到 {contact_name} 的 {len(formatted_messages)} 條新消息")
+            
+            return contacts_with_messages
+            
+        except Exception as e:
+            logger.error(f"獲取監聽消息時出錯: {e}")
+            return {} 

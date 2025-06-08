@@ -58,16 +58,10 @@ class MessageHandler:
             
             logger.info(f"收到來自 {sender} 的消息: {content[:50]}...")
             
-            # 添加到消息隊列
+            # 只添加到消息隊列，不立即處理，讓主循環統一處理
             self.message_queue.append(message)
             
-            # 根據發送者類型觸發不同的處理邏輯
-            if message.is_from_teacher:
-                self._handle_teacher_message(message)
-            elif self.config.is_student(sender):
-                self._handle_student_message(message)
-            else:
-                self._handle_unknown_message(message)
+            logger.info(f"消息已加入處理隊列，當前隊列長度: {len(self.message_queue)}")
             
             return message
             

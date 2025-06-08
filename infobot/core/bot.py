@@ -162,18 +162,12 @@ class InfoBot:
         # 設置定時任務
         self._setup_scheduled_tasks()
         
-        # 開始監控老師的消息
+        # 獲取聯繫人信息
         teacher_names = self.config.get_teacher_names()
         student_names = self.config.get_student_names()
         all_contacts = teacher_names + student_names
         
-        if teacher_names:
-            self.wechat_controller.start_monitoring_multiple_contacts(teacher_names)
-            logger.info(f"開始監控 {len(teacher_names)} 位老師的消息")
-        else:
-            logger.warning("未配置老師信息，無法開始監控")
-        
-        # 打開所有聊天窗口（老師和學生）
+        # 1. 先一次性打開所有聊天窗口（老師和學生）
         if all_contacts:
             logger.info(f"正在打開 {len(all_contacts)} 個聊天窗口（{len(teacher_names)} 位老師 + {len(student_names)} 位學生）")
             
@@ -182,8 +176,18 @@ class InfoBot:
             success_count = sum(1 for success in all_results.values() if success)
             
             logger.info(f"聊天窗口打開完成: {success_count}/{len(all_contacts)} 成功")
+            
+            # 短暫等待，確保窗口完全打開
+            time.sleep(2)
         else:
             logger.warning("未配置任何聯繫人，跳過打開聊天窗口")
+        
+        # 2. 然後才開始監控老師的消息（純檢測，不再打開窗口）
+        if teacher_names:
+            self.wechat_controller.start_monitoring_multiple_contacts(teacher_names)
+            logger.info(f"開始監控 {len(teacher_names)} 位老師的消息")
+        else:
+            logger.warning("未配置老師信息，無法開始監控")
         
         self.is_running = True
         self.start_time = datetime.now()
@@ -222,10 +226,13 @@ class InfoBot:
                     for message in pending_messages:
                         if message.is_from_teacher:
                             self._on_teacher_message(message)
+                        elif self.config.is_student(message.sender):
+                            self._on_student_message(message)
                         else:
-                            self.message_handler.mark_message_processed(message)
+                            self._on_unknown_message(message)
                 
-                # 主循環無需延遲
+                # 主循環適當延遲，避免CPU占用過高
+                time.sleep(1.0)
                 
         except KeyboardInterrupt:
             logger.info("收到停止信號")
@@ -353,4 +360,152 @@ class InfoBot:
         
         logger.info(f"廣播完成: {success_count}/{len(student_names)} 成功")
         
-        return results 
+        return results
+    
+    def _on_teacher_message(self, message):
+        """處理老師消息"""
+        try:
+            logger.info(f"處理來自老師 {message.sender} 的消息")
+            
+            # 1. 自動回覆"收到！"
+            reply_success = self.wechat_controller.reply_to_sender(
+                message.sender, "收到！"
+            )
+            
+            if reply_success:
+                self.stats["auto_replies_sent"] += 1
+                logger.info(f"✅ 已向 {message.sender} 自動回覆")
+            else:
+                logger.error(f"❌ 向 {message.sender} 自動回覆失敗")
+            
+            # 2. 判斷是否需要轉發
+            should_forward = self._should_forward_message(message.content)
+            
+            if should_forward:
+                # 3. 轉發給所有學生
+                self._forward_message_to_students(message)
+            else:
+                logger.info(f"消息不需要轉發: {message.content[:50]}...")
+            
+            # 4. 標記消息已處理
+            self.message_handler.mark_message_processed(message)
+            self.stats["messages_received"] += 1
+            
+        except Exception as e:
+            logger.error(f"處理老師消息時發生錯誤: {e}")
+    
+    def _on_student_message(self, message):
+        """處理學生消息"""
+        try:
+            logger.info(f"收到學生 {message.sender} 的消息: {message.content[:50]}...")
+            
+            # 學生消息通常不需要特殊處理，只記錄
+            self.message_handler.mark_message_processed(message)
+            self.stats["messages_received"] += 1
+            
+        except Exception as e:
+            logger.error(f"處理學生消息時發生錯誤: {e}")
+    
+    def _on_unknown_message(self, message):
+        """處理未知發送者消息"""
+        try:
+            logger.info(f"收到未知發送者 {message.sender} 的消息: {message.content[:50]}...")
+            
+            # 未知消息只記錄，不處理
+            self.message_handler.mark_message_processed(message)
+            
+        except Exception as e:
+            logger.error(f"處理未知消息時發生錯誤: {e}")
+    
+    def _should_forward_message(self, content: str) -> bool:
+        """判斷消息是否需要轉發"""
+        try:
+            # 使用AI分析（如果啟用）
+            if self.config.use_ai_for_analysis:
+                try:
+                    analysis_result = self.ai_client.analyze_message(content)
+                    should_forward = "需要轉發" in analysis_result
+                    logger.info(f"AI分析結果: {analysis_result}")
+                    return should_forward
+                except Exception as e:
+                    logger.warning(f"AI分析失敗，使用關鍵詞判斷: {e}")
+            
+            # 基於關鍵詞的簡單判斷
+            content_lower = content.lower()
+            
+            # 檢查黑名單關鍵詞
+            for keyword in self.config.blacklist_keywords:
+                if keyword in content_lower:
+                    logger.info(f"命中黑名單關鍵詞: {keyword}")
+                    return False
+            
+            # 檢查重要關鍵詞
+            for keyword in self.config.important_keywords:
+                if keyword in content_lower:
+                    logger.info(f"命中重要關鍵詞: {keyword}")
+                    return True
+            
+            # 消息長度判斷
+            if len(content) < self.config.min_message_length:
+                logger.info(f"消息太短，不轉發: {len(content)} < {self.config.min_message_length}")
+                return False
+            
+            # 默認轉發
+            return True
+            
+        except Exception as e:
+            logger.error(f"判斷是否轉發時發生錯誤: {e}")
+            return False
+    
+    def _forward_message_to_students(self, message):
+        """轉發消息給學生"""
+        try:
+            student_names = self.config.get_student_names()
+            
+            if not student_names:
+                logger.warning("沒有配置學生，無法轉發消息")
+                return
+            
+            # 生成轉發消息
+            forward_content = self._generate_forward_content(message)
+            
+            # 批量發送
+            logger.info(f"開始轉發消息給 {len(student_names)} 個學生")
+            results = self.wechat_controller.send_message_to_multiple_contacts(
+                student_names, forward_content
+            )
+            
+            # 統計結果
+            success_count = sum(1 for success in results.values() if success)
+            self.stats["messages_forwarded"] += success_count
+            self.stats["messages_sent"] += len(student_names)
+            
+            logger.info(f"轉發完成: {success_count}/{len(student_names)} 成功")
+            
+        except Exception as e:
+            logger.error(f"轉發消息時發生錯誤: {e}")
+    
+    def _generate_forward_content(self, message) -> str:
+        """生成轉發消息內容"""
+        try:
+            # 如果啟用AI生成
+            if self.config.use_ai_for_forwarding:
+                try:
+                    return self.ai_client.generate_forward_message(
+                        message.content, message.sender
+                    )
+                except Exception as e:
+                    logger.warning(f"AI生成轉發消息失敗，使用模板: {e}")
+            
+            # 使用簡單模板
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
+            
+            return self.config.forward_message_template.format(
+                teacher_name=message.sender,
+                timestamp=timestamp,
+                original_message=message.content
+            )
+            
+        except Exception as e:
+            logger.error(f"生成轉發內容時發生錯誤: {e}")
+            return f"📢 來自 {message.sender} 的消息:\n\n{message.content}" 

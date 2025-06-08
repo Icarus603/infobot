@@ -152,7 +152,7 @@ class WeChatController:
         return results
     
     def start_monitoring_contact(self, contact_name: str, check_interval: float = 3.0):
-        """開始監控指定聯繫人的消息 (改進版 - 基於變化檢測)"""
+        """開始監控指定聯繫人的消息 (改進版 - 使用 GetListenMessage)"""
         if contact_name in self.monitor_threads:
             logger.warning(f"已經在監控 {contact_name} 的消息")
             return
@@ -160,32 +160,33 @@ class WeChatController:
         logger.info(f"開始監控 {contact_name} 的消息")
         
         def monitor_loop():
-            """監控循環 - 使用變化檢測方法"""
+            """監控循環 - 使用 GetListenMessage 方法"""
             
             while self.is_monitoring:
                 try:
-                    logger.debug(f"正在監控 {contact_name}...")
+                    logger.debug(f"檢查所有聯繫人的新消息...")
                     
-                    # 打開聯繫人對話
-                    if self.wechat._open_chat(contact_name):
-                        logger.debug(f"✅ 成功打開 {contact_name} 的對話")
-                        
-                        # 等待消息變化
-                        if self.wechat.wait_for_message_change(timeout=check_interval):
-                            logger.info(f"🔔 檢測到 {contact_name} 的聊天窗口有變化!")
-                            
-                            # 觸發消息回調（模擬新消息）
-                            for callback in self.message_callbacks:
-                                try:
-                                    callback(contact_name, "檢測到新活動")
-                                except Exception as e:
-                                    logger.error(f"消息回調執行失敗: {e}")
-                        else:
-                            logger.debug(f"在 {check_interval} 秒內未檢測到 {contact_name} 的變化")
+                    # 使用新的 GetListenMessage 方法
+                    messages = self.wechat.GetListenMessage()
                     
+                    if messages:
+                        for sender, msg_list in messages.items():
+                            # 只處理指定的聯繫人
+                            if sender == contact_name:
+                                for msg in msg_list:
+                                    logger.info(f"🔔 檢測到 {sender} 的新消息: {msg.content[:50]}...")
+                                    
+                                    # 觸發消息回調進行自然語言處理
+                                    for callback in self.message_callbacks:
+                                        try:
+                                            callback(sender, msg.content)
+                                        except Exception as e:
+                                            logger.error(f"消息回調執行失敗: {e}")
                     else:
-                        logger.warning(f"❌ 無法打開 {contact_name} 的對話")
-                        time.sleep(check_interval * 2)  # 失敗時等待更長時間
+                        logger.debug(f"未檢測到任何新消息")
+                    
+                    # 等待間隔
+                    time.sleep(check_interval)
                         
                 except Exception as e:
                     logger.error(f"監控 {contact_name} 時發生錯誤: {e}")
@@ -197,6 +198,36 @@ class WeChatController:
         self.monitor_threads[contact_name] = thread
         
         logger.info(f"✅ 已啟動 {contact_name} 的監控線程")
+
+    def start_monitoring_multiple_contacts(self, contact_names: List[str], check_interval: float = 3.0):
+        """開始監控多個指定聯繫人的消息"""
+        if not contact_names:
+            logger.warning("聯繫人列表為空，無法開始監控")
+            return
+        
+        logger.info(f"準備監控來自配置文件的 {len(contact_names)} 個老師的消息:")
+        for i, teacher_name in enumerate(contact_names, 1):
+            logger.info(f"  {i}. {teacher_name}")
+        
+        # 設置監控狀態為 True
+        self.is_monitoring = True
+        
+        # 為每個聯繫人啟動監控
+        for i, contact_name in enumerate(contact_names):
+            try:
+                logger.info(f"正在為老師 '{contact_name}' 啟動監控線程...")
+                
+                # 為不同聯繫人使用不同的檢查間隔，避免衝突
+                individual_interval = check_interval + (i * 0.5)
+                self.start_monitoring_contact(contact_name, individual_interval)
+                
+                # 避免同時啟動太多監控
+                time.sleep(0.3)
+                
+            except Exception as e:
+                logger.error(f"啟動 {contact_name} 的監控時發生錯誤: {e}")
+        
+        logger.info(f"✅ 已啟動 {len(contact_names)} 個老師的消息監控線程")
 
     def start_monitoring_all_contacts(self, check_interval: float = 5.0):
         """開始監控所有聯繫人的消息 (改進版)"""

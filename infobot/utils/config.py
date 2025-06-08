@@ -13,7 +13,7 @@ from pydantic_settings import BaseSettings
 
 class SiliconFlowConfig(BaseModel):
     """SiliconFlow API配置"""
-    api_key: str = Field(..., description="API金鑰")
+    api_key: str = Field("", description="API金鑰")
     base_url: str = Field("https://api.siliconflow.cn/v1", description="API基礎URL")
     model: str = Field("Pro/deepseek-ai/DeepSeek-R1-0120", description="使用的模型")
     max_tokens: int = Field(512, description="最大token數")
@@ -31,7 +31,7 @@ class Config(BaseSettings):
     log_level: str = Field("INFO", description="日誌級別")
     
     # API配置
-    siliconflow: SiliconFlowConfig
+    siliconflow: SiliconFlowConfig = Field(default_factory=lambda: SiliconFlowConfig(api_key=""))
     
     # 自動化配置已簡化（由 wxauto_macos 管理）
     
@@ -80,4 +80,35 @@ class Config(BaseSettings):
     
     def is_student(self, name: str) -> bool:
         """檢查是否為學生"""
-        return name in self.students 
+        return name in self.students
+    
+    @property
+    def use_ai_for_analysis(self) -> bool:
+        """是否使用AI分析"""
+        return self.prompts.get("use_ai_for_analysis", True)
+    
+    @property
+    def use_ai_for_forwarding(self) -> bool:
+        """是否使用AI生成轉發消息"""
+        return self.prompts.get("use_ai_for_forwarding", False)
+    
+    @property
+    def min_message_length(self) -> int:
+        """最小消息長度"""
+        return self.prompts.get("min_message_length", 5)
+    
+    @property
+    def blacklist_keywords(self) -> List[str]:
+        """黑名單關鍵詞"""
+        return self.prompts.get("blacklist_keywords", [])
+    
+    @property
+    def important_keywords(self) -> List[str]:
+        """重要關鍵詞"""
+        return self.prompts.get("important_keywords", [])
+    
+    @property
+    def forward_message_template(self) -> str:
+        """轉發消息模板"""
+        return self.prompts.get("forward_message_template", 
+                               "📢 來自 {teacher_name} 的消息:\n\n{original_message}") 
